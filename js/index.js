@@ -1,39 +1,56 @@
-/**
- * Professional Portfolio - Minimal JavaScript
- * No excessive animations, just smooth interactions
- */
-
 "use strict";
 
 // ========================
-// SMOOTH SCROLL
+// NAVIGATION HANDLING
 // ========================
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
+const navLinks = document.querySelectorAll(".pro-nav-link");
+const menuToggle = document.querySelector(".pro-menu-toggle");
+const nav = document.querySelector(".pro-nav-links");
+
+const closeMenu = () => {
+  menuToggle.classList.remove("active");
+  nav.classList.remove("active");
+  document.body.classList.remove("no-scroll");
+};
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
+    const href = this.getAttribute("href");
+    // Defensively check for a valid anchor link before querying the DOM
+    const target = href && href.startsWith("#") && href.length > 1 ? document.querySelector(href) : null;
+
+    if (nav.classList.contains("active")) {
+      closeMenu();
+    }
+
     if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      // Use a timeout to ensure the menu is closed before scrolling
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 300); // 300ms matches the CSS transition
     }
   });
 });
 
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  nav.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
+});
+
 // ========================
-// NAVIGATION ACTIVE STATE
+// NAVIGATION ACTIVE STATE ON SCROLL
 // ========================
 const sections = document.querySelectorAll(".pro-section");
-const navLinks = document.querySelectorAll(".pro-nav-link");
 
 window.addEventListener("scroll", () => {
   let current = "";
-
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-
     if (pageYOffset >= sectionTop - 200) {
       current = section.getAttribute("id");
     }
@@ -64,29 +81,48 @@ window.addEventListener("scroll", () => {
 // CONTACT FORM HANDLING
 // ========================
 const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("form-status");
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    // Create mailto link with form data
+    // Basic validation
+    if (!name || !email || !message) {
+      formStatus.textContent = "Please fill out all fields.";
+      formStatus.className = "form-status error";
+      return;
+    }
+    
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        formStatus.textContent = "Please enter a valid email address.";
+        formStatus.className = "form-status error";
+        return;
+    }
+
+    formStatus.textContent = "Opening your email client...";
+    formStatus.className = "form-status success";
+
     const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      `Name: ${name}\nFrom Email: ${email}\n\nMessage:\n${message}`
     );
     const mailtoLink = `mailto:ericjohn415@gmail.com?subject=${subject}&body=${body}`;
 
-    // Open user's email client
     window.location.href = mailtoLink;
 
-    // Reset form after a short delay
+    // Reset form and status after a short delay
     setTimeout(() => {
       contactForm.reset();
-    }, 500);
+      formStatus.textContent = "";
+      formStatus.className = "form-status";
+    }, 3000);
   });
 }
 
@@ -107,7 +143,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observe cards and sections
 document
   .querySelectorAll(
     ".tech-category, .experience-card, .project-card, .stat-card"
@@ -136,7 +171,6 @@ if (terminalName) {
     }
   }
 
-  // Start typing after a short delay
   setTimeout(type, 500);
 }
 
@@ -154,7 +188,6 @@ const updateCopyrightYear = () => {
   }
 };
 
-// Update copyright year on load
 updateCopyrightYear();
 
 // ========================

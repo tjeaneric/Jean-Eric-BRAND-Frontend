@@ -71,6 +71,11 @@
           <li><a href="#projects" class="pro-nav-link">projects</a></li>
           <li><a href="#contact" class="pro-nav-link">contact</a></li>
         </ul>
+        <div class="pro-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
 
@@ -136,24 +141,14 @@
             Currently exploring: Kubernetes operators, service mesh
             architectures, and eBPF-based observability.
           </p>
-          <p
-            style="
-              margin-top: 2rem;
-              padding: 1.5rem;
-              background: rgba(0, 255, 136, 0.1);
-              border-left: 3px solid var(--accent-primary);
-              border-radius: 0.5rem;
-            "
-          >
-            <strong style="color: var(--accent-primary)"
-              >AWS Certified Cloud Practitioner</strong
-            >
-            – Validated expertise in AWS cloud fundamentals, services, and best
-            practices.
-          </p>
         </div>
 
         <div class="stats-grid">
+          <div class="certification-card">
+            <strong class="certification-title">AWS Certified Cloud Practitioner</strong>
+            – Validated expertise in AWS cloud fundamentals, services, and best
+            practices.
+          </div>
           <div class="stat-card">
             <span class="stat-value">4+</span>
             <span class="stat-label">Years Experience</span>
@@ -830,65 +825,48 @@
         Interested in working together? Let's talk about your project.
       </p>
 
-      <div class="contact-container">
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label class="form-label" for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-input"
-              required
-            />
+      <div class="contact-layout">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. jane.doe@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="pro-btn pro-btn-primary" id="submit-button">
+                  Send Message
+              </button>
+              <p class="form-status" id="form-status"></p>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3 class="contact-info-title">Or reach out directly</h3>
+          <p class="contact-info-description">Feel free to connect on other platforms.</p>
+          <div class="contact-links">
+            <a href="mailto:ericjohn415@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>ericjohn415@gmail.com</span>
+            </a>
+            <a href="https://github.com/tjeaneric" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/tuyishimire" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
           </div>
-
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-input"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-textarea"
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="pro-btn pro-btn-primary">
-            Send Message
-          </button>
-        </form>
-
-        <div class="contact-links">
-          <a href="mailto:ericjohn415@gmail.com" class="contact-link">
-            <i class="fas fa-envelope"></i> ericjohn415@gmail.com
-          </a>
-          <a
-            href="https://github.com/tjeaneric"
-            class="contact-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/tuyishimire"
-            class="contact-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
         </div>
       </div>
     </section>
