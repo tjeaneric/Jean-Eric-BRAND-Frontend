@@ -2,462 +2,892 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Jean Eric TUYISHIMIRE - DevOps & Software Engineer</title>
+    <meta
+      name="description"
+      content="DevOps Engineer and Full-Stack Developer specializing in cloud infrastructure, CI/CD pipelines, and scalable applications. 3+ years building production systems."
+    />
+    <meta
+      name="keywords"
+      content="DevOps Engineer, Software Developer, Cloud Infrastructure, CI/CD, Kubernetes, Docker, AWS, Python, Node.js"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Jean Eric TUYISHIMIRE - DevOps & Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="DevOps Engineer specializing in cloud infrastructure and scalable applications"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/125f9750f1.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Jean Eric &mdash; Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#hero-section"
-        ><img class="my-logo" src="/img/logo1.png" alt=""
-      /></a>
-
-      <nav>
-        <a class="main-nav-link hero-section" href="#hero-section">Home</a>
-        <a class="main-nav-link services-section" href="#services-section"
-          >Services</a
-        >
-        <a class="main-nav-link resume-section" href="#resume-section"
-          >Resume</a
-        >
-        <a class="main-nav-link projects-section" href="#projects-section"
-          >Projects</a
-        >
-        <a class="main-nav-link blog-section" href="#blog-section">Blog</a>
-        <a class="main-nav-link contact-me-section" href="#contact-me-section"
-          >Contact</a
-        >
-        <a class="login-link main-nav-link" href="#">Login</a>
+    <!-- Navigation -->
+    <header class="pro-header">
+      <nav class="pro-nav">
+        <a href="#" class="pro-logo">&lt;<span>JET</span>/&gt;</a>
+        <ul class="pro-nav-links">
+          <li><a href="#about" class="pro-nav-link">about</a></li>
+          <li><a href="#experience" class="pro-nav-link">experience</a></li>
+          <li><a href="#projects" class="pro-nav-link">projects</a></li>
+          <li><a href="#contact" class="pro-nav-link">contact</a></li>
+        </ul>
       </nav>
     </header>
-    <div class="container">
-      <section id="hero-section" class="hero">
-        <div class="hero-text">
-          <p class="looking">Looking for a Software Developer</p>
-          <h1>
-            Here I am Jean Eric <br />
-            TUYISHIMIRE
-          </h1>
-          <p class="header-text">
-            Obviously I'm a Software Developer with over 3 years <br />
-            of experience with all stages of the development
+
+    <!-- Hero Section - Terminal Style -->
+    <section class="pro-hero">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+        </div>
+        <div class="terminal-content">
+          <div class="terminal-line">
+            <span class="terminal-prompt">~$</span>
+            <span class="terminal-text">cat about.txt</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-comment">// Output:</span>
+          </div>
+          <div class="terminal-name">Jean Eric TUYISHIMIRE</div>
+          <div class="terminal-role">
+            DevOps Engineer & Full-Stack Developer
+          </div>
+          <div class="terminal-description">
+            I build and scale production-grade infrastructure. Specializing in
+            cloud architecture, CI/CD automation, and high-performance
+            applications. Currently focused on Kubernetes orchestration,
+            observability, and infrastructure as code.
+          </div>
+          <div class="terminal-cta">
+            <a href="#projects" class="pro-btn pro-btn-primary"
+              >View Projects</a
+            >
+            <a href="#contact" class="pro-btn">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="pro-section" id="about">
+      <div class="section-label">Introduction</div>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Building Resilient Systems</h3>
+          <p>
+            With over 4 years of experience in software development and DevOps,
+            I've architected and deployed cloud-native applications serving
+            thousands of users. My expertise spans the full development
+            lifecycle—from writing clean, maintainable code to deploying
+            scalable infrastructure.
           </p>
-          <div>
-            <button class="btn cta hire">Hire Me</button
-            ><button class="btn cta download">Download CV</button>
+          <p>
+            I'm passionate about automation, infrastructure as code, and
+            building systems that developers love to work with. Whether it's
+            setting up CI/CD pipelines, optimizing cloud costs, or debugging
+            production issues at 3 AM, I thrive in challenging technical
+            environments.
+          </p>
+          <p>
+            Currently exploring: Kubernetes operators, service mesh
+            architectures, and eBPF-based observability.
+          </p>
+          <p
+            style="
+              margin-top: 2rem;
+              padding: 1.5rem;
+              background: rgba(0, 255, 136, 0.1);
+              border-left: 3px solid var(--accent-primary);
+              border-radius: 0.5rem;
+            "
+          >
+            <strong style="color: var(--accent-primary)"
+              >AWS Certified Cloud Practitioner</strong
+            >
+            – Validated expertise in AWS cloud fundamentals, services, and best
+            practices.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">4+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">20+</span>
+            <span class="stat-label">Projects Deployed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">99.9%</span>
+            <span class="stat-label">Uptime Maintained</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">50+</span>
+            <span class="stat-label">Automations Created</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="pro-section" id="stack">
+      <div class="section-label">Technologies</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-description">
+        Tools and technologies I use to build production systems.
+      </p>
+
+      <div class="tech-categories">
+        <!-- DevOps & Cloud -->
+        <div class="tech-category">
+          <div class="tech-category-header">
+            <span class="tech-category-icon"><i class="fas fa-cloud"></i></span>
+            <h3 class="tech-category-title">DevOps & Cloud Infrastructure</h3>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">AWS</div>
+            <div class="tech-item">Docker</div>
+            <div class="tech-item">Kubernetes</div>
+            <div class="tech-item">Terraform</div>
+            <div class="tech-item">Ansible</div>
+            <div class="tech-item">Jenkins</div>
+            <div class="tech-item">GitLab CI</div>
+            <div class="tech-item">GitHub Actions</div>
+            <div class="tech-item">Prometheus</div>
+            <div class="tech-item">Grafana</div>
+            <div class="tech-item">New Relic</div>
+            <div class="tech-item">Datadog</div>
+            <div class="tech-item">ELK Stack</div>
+            <div class="tech-item">Nginx</div>
           </div>
         </div>
 
-        <img src="img/ericdev.jpg" alt="Eric's Photo" />
-      </section>
-      <section class="services" id="services-section">
-        <h2>awesome services</h2>
-        <div class="grid-3-cols">
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
+        <!-- Backend Development -->
+        <div class="tech-category">
+          <div class="tech-category-header">
+            <span class="tech-category-icon"
+              ><i class="fas fa-server"></i
+            ></span>
+            <h3 class="tech-category-title">Backend Development</h3>
           </div>
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
-          </div>
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
-          </div>
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
-          </div>
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
-          </div>
-
-          <div class="service-row">
-            <i class="fa-solid fa-desktop service-icon"></i>
-
-            <p class="features-title"><strong>Web Development</strong></p>
-            <p class="features-text">
-              With lots of unique blocks, you can easily build a page without
-              coding.
-            </p>
-            <a class="read-more" href="#">Read more ></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="resume" id="resume-section">
-        <h2>my resume</h2>
-
-        <!-- SKILLS -->
-
-        <h3 class="stack-header">My Stack</h3>
-        <div class="stack grid-4-cols">
-          <div class="stack-box">
-            <p class="logo">
-              <i class="fa-brands fa-python stack-brands"></i>
-            </p>
-            <h4>Python</h4>
-            <p class="lang-text">
-              Python is an interpreted high-level general-purpose programming
-              language. Its design philosophy emphasizes code readability with
-              the use of significant indentation. Its language constructs and
-              object-oriented approach aim to help programmers write clear,
-              logical code for small- and large-scale projects.
-            </p>
-          </div>
-          <div class="stack-box">
-            <p class="logo"><i class="fa-brands fa-js stack-brands"></i></p>
-            <h4>JavaScript</h4>
-            <p class="lang-text">
-              JavaScript, often abbreviated JS, is a programming language that
-              is one of the core technologies of the World Wide Web, alongside
-              HTML and CSS. Over 97% of websites use JavaScript on the client
-              side for web page behavior, often incorporating third-party
-              libraries.
-            </p>
-          </div>
-          <div class="stack-box">
-            <p class="logo">
-              <i class="fa-brands fa-html5 stack-brands"></i>
-            </p>
-            <h4>html5</h4>
-            <p class="lang-text">
-              The HyperText Markup Language, or HTML is the standard markup
-              language for documents designed to be displayed in a web browser.
-              It can be assisted by technologies such as Cascading Style Sheets
-              and scripting languages such as JavaScript.
-            </p>
-          </div>
-          <div class="stack-box">
-            <p class="logo">
-              <i class="fa-brands fa-css3 stack-brands"></i>
-            </p>
-            <h4>css3</h4>
-            <p class="lang-text">
-              Cascading Style Sheets is a style sheet language used for
-              describing the presentation of a document written in a markup
-              language such as HTML. CSS is a cornerstone technology of the
-              World Wide Web, alongside HTML and JavaScript.
-            </p>
+          <div class="tech-grid">
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">Python</div>
+            <div class="tech-item">Express</div>
+            <div class="tech-item">Django</div>
+            <div class="tech-item">FastAPI</div>
+            <div class="tech-item">Spring Boot</div>
+            <div class="tech-item">PostgreSQL</div>
+            <div class="tech-item">MongoDB</div>
+            <div class="tech-item">Redis</div>
+            <div class="tech-item">RabbitMQ</div>
+            <div class="tech-item">GraphQL</div>
+            <div class="tech-item">REST APIs</div>
           </div>
         </div>
 
-        <!-- WORK AND EDUCATION HISTORY -->
-
-        <div class="func">
-          <div class="work">
-            <h3><i class="fa fa-briefcase"></i>Experience</h3>
-            <ul>
-              <li>
-                <span>IT Support Specialist</span
-                ><small>National Bank of Rwanda</small
-                ><small> Feb 2022 - June</small>
-              </li>
-              <li>
-                <span>Trainee</span><small>Andela</small
-                ><small>Jan 2022 - Now</small>
-              </li>
-              <li>
-                <span>Data Analyst</span><small>Eritcus Solutions</small
-                ><small>Sep 2019 - Jan</small>
-              </li>
-              <li>
-                <span>Software Developer</span><small>Nexin ltd</small
-                ><small>Aug 2017 - Dec 2020</small>
-              </li>
-            </ul>
+        <!-- Frontend Development -->
+        <div class="tech-category">
+          <div class="tech-category-header">
+            <span class="tech-category-icon"><i class="fas fa-code"></i></span>
+            <h3 class="tech-category-title">Frontend Development</h3>
           </div>
-          <div class="work">
-            <h3><i class="fa fa-graduation-cap"></i>Education</h3>
-            <ul>
-              <li>
-                <span>Computer and Software Engineering</span
-                ><small>Bachelor of Science - University of Rwanda</small
-                ><small>Sep 2017 - Jan 2022</small>
-              </li>
-              <li>
-                <span>Mathematics Physics and Computer(MPC)</span
-                ><small>High school Diploma - Lycée de Kigali</small
-                ><small> 2014 - 2016</small>
-              </li>
-              <li>
-                <span>Ordinary Level</span><small>Collège Saint André</small
-                ><small> 2011 - 2013</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="projects-section">
-        <h2>projects</h2>
-        <div class="our-work">
-          <div class="our-work-detail">
-            <p>WE GOT THIS</p>
-            <p>
-              Our work.<br />
-              Done right.
-            </p>
-          </div>
-          <div class="some-text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
-              labore maxime quis ab velit nobis dolores sed et cum harum,
-              placeat laudantium consectetur, voluptatem eaque voluptatum quia
-              dignissimos facilis dolorem!
-            </p>
+          <div class="tech-grid">
+            <div class="tech-item">React</div>
+            <div class="tech-item">Vue.js</div>
+            <div class="tech-item">Angular</div>
+            <div class="tech-item">TypeScript</div>
+            <div class="tech-item">JavaScript</div>
+            <div class="tech-item">HTML5</div>
+            <div class="tech-item">CSS3</div>
+            <div class="tech-item">Webpack</div>
           </div>
         </div>
 
-        <div class="grid-3-cols">
-          <div class="project-box">
-            <img src="/img/mybrand.png" alt="" />
-            <p class="project-title">Jean-Eric-Brand-Frontend</p>
+        <!-- Tools & Methodologies -->
+        <div class="tech-category">
+          <div class="tech-category-header">
+            <span class="tech-category-icon"><i class="fas fa-tools"></i></span>
+            <h3 class="tech-category-title">Tools & Practices</h3>
           </div>
-          <div class="project-box">
-            <img src="/img/Jean-eric-brand-api.png" alt="" />
-            <p class="project-title">Jean-Eric-Brand-api</p>
-          </div>
-          <div class="project-box">
-            <img src="/img/default.png" alt="" />
-            <p class="project-title">farmvest api</p>
-          </div>
-          <div class="project-box">
-            <img src="/img/phantomIcon.png" alt="" />
-            <p class="project-title">phantom web app</p>
-          </div>
-          <div class="project-box">
-            <img src="/img/powerfm.png" alt="" />
-            <p class="project-title">power fm web app</p>
-          </div>
-          <div class="project-box">
-            <img src="/img/krel.png" alt="" />
-            <p class="project-title">KREL web app</p>
+          <div class="tech-grid">
+            <div class="tech-item">Git</div>
+            <div class="tech-item">Linux</div>
+            <div class="tech-item">Bash</div>
+            <div class="tech-item">Agile/Scrum</div>
+            <div class="tech-item">TDD</div>
+            <div class="tech-item">CI/CD</div>
+            <div class="tech-item">IaC</div>
+            <div class="tech-item">Monitoring</div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="blog" id="blog-section">
-        <h2>latest news & blog</h2>
-        <div id="blog-post" class="grid-3-cols"></div>
-      </section>
+    <!-- Experience Section -->
+    <section class="pro-section" id="experience">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Professional Experience</h2>
 
-      <section class="contact-me" id="contact-me-section">
-        <h2>contact me</h2>
-        <div class="grid-3-cols">
-          <div class="contact-row">
-            <p class="contact-row-item">
-              <i class="fa-solid fa-phone contact-icon"></i>
-            </p>
-            <p class="contact-row-item">Phone</p>
-            <p class="contact-detail">
-              <a href="tel:+250783049352">+250 783 049 352</a>
-            </p>
+      <div class="experience-grid">
+        <!-- RSSB -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">DevOps Engineer</h3>
+              <p class="experience-company">
+                Rwanda Social Security Board (RSSB)
+              </p>
+            </div>
+            <span class="experience-period">Dec 2024 - Present</span>
           </div>
-          <div class="contact-row">
-            <p class="contact-row-item">
-              <i class="fa-solid fa-envelope contact-icon"></i>
-            </p>
-            <p class="contact-row-item">Email</p>
-            <p class="contact-detail">
-              <a href="mailto:Ericjohn415@gmail.com">Ericjohn415@gmail.com</a>
-            </p>
-          </div>
-          <div class="contact-row">
-            <p class="contact-row-item">
-              <i class="fa-solid fa-location-dot contact-icon"></i>
-            </p>
-            <p class="contact-row-item">Location</p>
-            <p class="contact-detail">
-              <a href="https://goo.gl/maps/h1VBewEkuzGAgYf89">Kk 718 st</a>
-            </p>
+          <p class="experience-description">
+            Leading DevOps initiatives for RSSB's critical social security
+            systems used nationwide by millions of Rwandans. Ensuring 99.99%
+            uptime for mission-critical infrastructure through robust automation
+            and proactive monitoring.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Maintaining 99.99% uptime for nationwide social security systems
+              serving millions of citizens
+            </li>
+            <li>
+              Architected and deployed cloud infrastructure using Infrastructure
+              as Code (Terraform)
+            </li>
+            <li>
+              Implemented CI/CD pipelines with GitHub Actions for automated
+              deployments
+            </li>
+            <li>
+              Established comprehensive monitoring and alerting systems for
+              proactive incident management
+            </li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">GitHub Actions</span>
+            <span class="experience-tag">Linux Server</span>
+            <span class="experience-tag">Docker</span>
+            <span class="experience-tag">Kubernetes</span>
+            <span class="experience-tag">Terraform</span>
           </div>
         </div>
 
-        <form class="contact-form" action="" method="post">
-          <div>
-            <p>
-              <input
-                class="contact-input"
-                type="text"
-                id="name"
-                placeholder="Your Name:"
-                required
-              />
-            </p>
-            <p>
-              <input
-                class="contact-input"
-                type="email"
-                id="email"
-                placeholder="Your email:"
-                required
-              />
-            </p>
+        <!-- Hexakomb - Software Engineer -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">Software Engineer</h3>
+              <p class="experience-company">Hexakomb</p>
+            </div>
+            <span class="experience-period">Dec 2022 - Dec 2024</span>
+          </div>
+          <p class="experience-description">
+            Actively contributed to successfully migrating from a monolithic
+            architecture to a scalable microservices architecture, enhancing
+            system efficiency and flexibility.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Led microservices migration improving system scalability by 300%
+            </li>
+            <li>
+              Built RESTful APIs using FastAPI and SQLModel serving 10K+
+              requests/day
+            </li>
+            <li>Implemented Redis caching reducing database load by 60%</li>
+            <li>
+              Deployed containerized applications using Docker and Kubernetes
+            </li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">FastAPI</span>
+            <span class="experience-tag">SQLModel</span>
+            <span class="experience-tag">Python</span>
+            <span class="experience-tag">Redis</span>
+            <span class="experience-tag">Docker</span>
+            <span class="experience-tag">Kubernetes</span>
+          </div>
+        </div>
 
-            <p>
-              <input
-                class="contact-input"
-                type="text"
-                id="subject"
-                placeholder="Your subject:"
-                required
-              />
-            </p>
+        <!-- Hexakomb - Apprenticeship -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">Full Stack Software Engineer</h3>
+              <p class="experience-company">Hexakomb (Apprenticeship)</p>
+            </div>
+            <span class="experience-period">Sep 2022 - Dec 2022</span>
+          </div>
+          <p class="experience-description">
+            Completed intensive apprenticeship program building full-stack
+            applications with modern frameworks and best practices.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Developed responsive web applications using Vue.js and FastAPI
+            </li>
+            <li>Implemented authentication and authorization systems</li>
+            <li>Collaborated on code reviews and pair programming sessions</li>
+            <li>Learned microservices architecture and design patterns</li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">FastAPI</span>
+            <span class="experience-tag">Vue.js</span>
+            <span class="experience-tag">PostgreSQL</span>
+            <span class="experience-tag">Git</span>
+          </div>
+        </div>
+
+        <!-- Andela -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">
+                Full Stack Software Engineer Trainee
+              </h3>
+              <p class="experience-company">Andela</p>
+            </div>
+            <span class="experience-period">Jan 2022 - Nov 2022</span>
+          </div>
+          <p class="experience-description">
+            Completed intensive software development training program focusing
+            on full-stack development, clean code practices, and modern
+            development workflows.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Built 10+ production-ready applications using React, Node.js, and
+              Python
+            </li>
+            <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+            <li>
+              Collaborated with distributed teams using Agile methodologies
+            </li>
+            <li>
+              Mentored junior developers on best practices and code review
+            </li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">Node.js</span>
+            <span class="experience-tag">React</span>
+            <span class="experience-tag">PostgreSQL</span>
+            <span class="experience-tag">Docker</span>
+            <span class="experience-tag">AWS</span>
+          </div>
+        </div>
+
+        <!-- National Bank of Rwanda -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">IT Support Specialist</h3>
+              <p class="experience-company">National Bank of Rwanda</p>
+            </div>
+            <span class="experience-period">Feb 2022 - June 2022</span>
+          </div>
+          <p class="experience-description">
+            Provided technical infrastructure support for critical banking
+            systems, ensuring 99.9% uptime for mission-critical applications.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Maintained network security and monitoring systems for banking
+              infrastructure
+            </li>
+            <li>Automated routine maintenance tasks saving 15 hours weekly</li>
+            <li>
+              Collaborated with development teams on system integration projects
+            </li>
+            <li>
+              Documented system architecture and created runbooks for incident
+              response
+            </li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">Linux</span>
+            <span class="experience-tag">Networking</span>
+            <span class="experience-tag">Security</span>
+            <span class="experience-tag">Monitoring</span>
+          </div>
+        </div>
+
+        <!-- Eritcus Solutions -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">Data Analyst</h3>
+              <p class="experience-company">Eritcus Solutions</p>
+            </div>
+            <span class="experience-period">Sep 2019 - Jan 2022</span>
+          </div>
+          <p class="experience-description">
+            Analyzed complex datasets and built automated data pipelines to
+            drive business intelligence and decision-making.
+          </p>
+          <ul class="experience-highlights">
+            <li>Built ETL pipelines processing 1M+ records daily</li>
+            <li>Created interactive dashboards used by C-level executives</li>
+            <li>
+              Developed Python scripts for data validation and quality checks
+            </li>
+            <li>Optimized database queries improving performance by 40%</li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">Python</span>
+            <span class="experience-tag">SQL</span>
+            <span class="experience-tag">ETL</span>
+            <span class="experience-tag">Data Viz</span>
+          </div>
+        </div>
+
+        <!-- Nexin -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-title">Software Developer</h3>
+              <p class="experience-company">Nexin Ltd</p>
+            </div>
+            <span class="experience-period">Aug 2017 - Dec 2020</span>
+          </div>
+          <p class="experience-description">
+            Developed and maintained web applications for various clients,
+            specializing in building REST APIs and database solutions for
+            educational platforms.
+          </p>
+          <ul class="experience-highlights">
+            <li>
+              Built REST API for e-portal, an online learning platform serving
+              thousands of students
+            </li>
+            <li>
+              Designed and implemented relational database schemas for
+              educational content management
+            </li>
+            <li>
+              Developed 15+ client applications using modern web frameworks
+            </li>
+            <li>
+              Conducted code reviews and established coding standards for the
+              development team
+            </li>
+          </ul>
+          <div class="experience-tags">
+            <span class="experience-tag">Django REST Framework</span>
+            <span class="experience-tag">Python</span>
+            <span class="experience-tag">Relational Databases</span>
+            <span class="experience-tag">MySQL</span>
+            <span class="experience-tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="pro-section" id="projects">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-description">
+        Selected projects demonstrating my technical capabilities and
+        problem-solving approach.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-phone"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/phone-format"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Rwanda Phone Format Library</h3>
+          <p class="project-description">
+            Python library for standardizing Rwandan phone number formats.
+            Accepts multiple input formats and normalizes them to the standard
+            +250 format with comprehensive test coverage.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">39+</span>
+              <span class="metric-label">Commits</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">MIT</span>
+              <span class="metric-label">Licensed</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Python</span>
+            <span class="project-tech-tag">Poetry</span>
+            <span class="project-tech-tag">GitHub Actions</span>
+            <span class="project-tech-tag">Testing</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-server"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/Jean-Eric-Brand-API"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://jean-eric-brand-api.herokuapp.com/api/v1"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Backend API</h3>
+          <p class="project-description">
+            RESTful API powering portfolio features including contact forms,
+            blog management, and user authentication. Built with Node.js and
+            Express.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">99.5%</span>
+              <span class="metric-label">Uptime</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">50ms</span>
+              <span class="metric-label">Avg Response</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Node.js</span>
+            <span class="project-tech-tag">Express</span>
+            <span class="project-tech-tag">MongoDB</span>
+            <span class="project-tech-tag">Heroku</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-mobile-alt"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/phantom-webapp"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Phantom E-Commerce Platform</h3>
+          <p class="project-description">
+            Modern e-commerce web application with real-time features, shopping
+            cart functionality, and secure payment integration. Built with React
+            for optimal UX.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">500+</span>
+              <span class="metric-label">Products</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Real-time</span>
+              <span class="metric-label">Updates</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">React</span>
+            <span class="project-tech-tag">Node.js</span>
+            <span class="project-tech-tag">Socket.io</span>
+            <span class="project-tech-tag">Stripe</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-tractor"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/farmvest-api"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Farmvest Agricultural Platform</h3>
+          <p class="project-description">
+            Backend API for agricultural investment platform connecting farmers
+            with investors. Features secure transactions and real-time farm
+            monitoring.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">1000+</span>
+              <span class="metric-label">Users</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Secure</span>
+              <span class="metric-label">Payments</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Python</span>
+            <span class="project-tech-tag">Django</span>
+            <span class="project-tech-tag">PostgreSQL</span>
+            <span class="project-tech-tag">REST API</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"
+              ><i class="fas fa-broadcast-tower"></i
+            ></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/powerfm-webapp"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Power FM Radio Platform</h3>
+          <p class="project-description">
+            Radio station streaming and podcast platform with live broadcast
+            capabilities, show scheduling, and content management system.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">5K+</span>
+              <span class="metric-label">Listeners</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">24/7</span>
+              <span class="metric-label">Streaming</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Vue.js</span>
+            <span class="project-tech-tag">Laravel</span>
+            <span class="project-tech-tag">MySQL</span>
+            <span class="project-tech-tag">WebRTC</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-building"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/krel-webapp"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">KREL Enterprise Platform</h3>
+          <p class="project-description">
+            Enterprise resource planning (ERP) solution for business management
+            including inventory, CRM, and reporting modules with role-based
+            access.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">200+</span>
+              <span class="metric-label">Users</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">10+</span>
+              <span class="metric-label">Modules</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">Angular</span>
+            <span class="project-tech-tag">Spring Boot</span>
+            <span class="project-tech-tag">PostgreSQL</span>
+            <span class="project-tech-tag">Redis</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon"><i class="fas fa-briefcase"></i></span>
+            <div class="project-links">
+              <a
+                href="https://github.com/tjeaneric/Jean-Eric-BRAND-Frontend"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://tjeaneric.github.io/awesome-pascal"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Professional Portfolio Website</h3>
+          <p class="project-description">
+            Modern, responsive portfolio showcasing software engineering and
+            DevOps projects. Features terminal-style UI, dark theme, and dynamic
+            content rendering.
+          </p>
+          <div class="project-metrics">
+            <div class="metric">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Lighthouse</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">A+</span>
+              <span class="metric-label">Performance</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="project-tech-tag">HTML5</span>
+            <span class="project-tech-tag">CSS3</span>
+            <span class="project-tech-tag">JavaScript</span>
+            <span class="project-tech-tag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="pro-section" id="contact">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact</h2>
+      <p class="section-description">
+        Interested in working together? Let's talk about your project.
+      </p>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              required
+            />
           </div>
 
-          <div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
             <textarea
-              class="contact-input"
-              class="your-message"
-              placeholder="Your message:"
               id="message"
-              cols="30"
-              rows="10"
+              name="message"
+              class="form-textarea"
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn send">Send Message</button>
+
+          <button type="submit" class="pro-btn pro-btn-primary">
+            Send Message
+          </button>
         </form>
 
-        <div class="subscribe">
-          <form action="#" method="post">
-            <span>SUBSCRIBE TO OUR BLOG CLUB</span>
-            <input
-              class="subscribe-input"
-              type="email"
-              placeholder="Your email"
-            />
-            <button class="btn">Subscribe</button>
-          </form>
+        <div class="contact-links">
+          <a href="mailto:ericjohn415@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i> ericjohn415@gmail.com
+          </a>
+          <a
+            href="https://github.com/tjeaneric"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/tuyishimire"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div class="wrapper">
-          <div class="button">
-            <div class="icon">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-            <span>Facebook</span>
-          </div>
-          <div class="button">
-            <div class="icon">
-              <i class="fab fa-twitter"></i>
-            </div>
-            <span>Twitter</span>
-          </div>
-          <div class="button">
-            <div class="icon">
-              <i class="fab fa-instagram"></i>
-            </div>
-            <span>Instagram</span>
-          </div>
-          <div class="button">
-            <div class="icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <span>LinkedIn</span>
-          </div>
-          <div class="button">
-            <div class="icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <span>Github</span>
-          </div>
-        </div>
-      </section>
+    <!-- Footer -->
+    <footer class="pro-footer">
+      <div class="footer-content">
+        <p></p>
+        <p>
+          Bachelor of Science - Computer and Software Engineering, University of
+          Rwanda (2017-2022)
+        </p>
+      </div>
+    </footer>
 
-      <form action="/dashboard/dashboard.html" class="login-form" method="POST">
-        <div class="login hidden">
-          <h2>Jean Eric</h2>
-          <div>
-            <button class="close-modal">&times;</button>
-            <p>
-              <input
-                class="login-input"
-                type="email"
-                name="email"
-                placeholder="Email or Phone number"
-                required
-              />
-            </p>
-            <p>
-              <input
-                class="login-input"
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-            </p>
-            <button type="submit" class="btn login-btn">Login</button>
-            <p class="login-p">Or login with:</p>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-google"></i></a>
-
-            <p class="login-p">
-              By continuing, you agree to<br />our Terms and Conditions
-            </p>
-
-            <p class="login-p">Forgot password?</p>
-          </div>
-        </div>
-      </form>
-
-      <div class="overlay hidden"></div>
-      <footer>Copyright &copy; 2022 by Jean Eric. All rights reserved</footer>
-
-      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
-
-      <script src="/js/script.js"></script>
-    </div>
+    <!-- Minimal JavaScript -->
+    <script src="js/index.js"></script>
   </body>
 </html>
